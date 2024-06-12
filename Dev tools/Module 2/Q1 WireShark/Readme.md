@@ -12,7 +12,11 @@
    >tcp.port == 443 is filter to show only https packets
    
    ![filter](https://github.com/Sharath15eUR/0xAQ/assets/88236255/235129b1-92bf-446d-af69-20f32c0f775b)
-   
+
+4.Decrypt the wireshark pcap using passphrase, to view the encrytped packets. 
+
+   ![decryption](https://github.com/Sharath15eUR/0xAQ/assets/88236255/75579e4f-18b6-44e0-93c3-31ad330efc0c)
+
 5. Point out ethernet and 802.11 frames
    > wlan is the filter for 802.11 and eth for ethernet
 
