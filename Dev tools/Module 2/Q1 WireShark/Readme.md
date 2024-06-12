@@ -14,4 +14,7 @@
    ![filter](https://github.com/Sharath15eUR/0xAQ/assets/88236255/235129b1-92bf-446d-af69-20f32c0f775b)
    
 5. Point out ethernet and 802.11 frames
-   ![wifi capture](https://github.com/Sharath15eUR/0xAQ/assets/88236255/146b5855-af27-4bb5-8501-4ade4a7ea32a)
+   > wlan is the filter for 802.11 and eth for ethernet
+
+   ![wlan](https://github.com/Sharath15eUR/0xAQ/assets/88236255/2e40abf7-667a-4499-910f-e0256908d7a9)
+   ![ethernet](https://github.com/Sharath15eUR/0xAQ/assets/88236255/657e2529-0575-4afe-81ca-d7a64e472398)
