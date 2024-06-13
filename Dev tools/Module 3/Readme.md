@@ -54,7 +54,7 @@ network={
    ```
    Terminal 2 - freeradius
    ```
-   systemctl status freeradius
+   systemctl start freeradius
    freeradius -X
    ```
    Terminal 3 - tcpdump
