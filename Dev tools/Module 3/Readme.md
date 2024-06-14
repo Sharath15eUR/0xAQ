@@ -56,6 +56,10 @@ network={
    ```
    systemctl start freeradius
    freeradius -X
+   #if you get failed port address already in use then 
+   service freeradius restart
+   service freeradius stop
+   freeradius -X
    ```
    Terminal 3 - tcpdump
    ```
