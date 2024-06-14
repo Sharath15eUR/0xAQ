@@ -1,0 +1,90 @@
+==00:00:00:00.000 9876== Memcheck, a memory error detector
+==00:00:00:00.000 9876== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==00:00:00:00.000 9876== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==00:00:00:00.000 9876== Command: ./output
+==00:00:00:00.000 9876== Parent PID: 2032
+==00:00:00:00.000 9876== 
+==00:00:00:00.527 9876== Invalid read of size 4
+==00:00:00:00.527 9876==    at 0x10923B: test1 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.527 9876==    by 0x10955A: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.527 9876==  Address 0x4a9d068 is 40 bytes inside a block of size 400 free'd
+==00:00:00:00.527 9876==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==00:00:00:00.527 9876==    by 0x109232: test1 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.527 9876==    by 0x10955A: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.527 9876==  Block was alloc'd at
+==00:00:00:00.527 9876==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==00:00:00:00.527 9876==    by 0x1091DE: test1 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.527 9876==    by 0x10955A: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.527 9876== 
+==00:00:00:00.542 9876== Invalid write of size 4
+==00:00:00:00.542 9876==    at 0x10931B: test3 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==    by 0x10956E: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==  Address 0x4a9d704 is 4 bytes inside a block of size 200 free'd
+==00:00:00:00.542 9876==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==00:00:00:00.542 9876==    by 0x109328: test3 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==    by 0x10956E: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==  Block was alloc'd at
+==00:00:00:00.542 9876==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==00:00:00:00.542 9876==    by 0x1092DC: test3 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==    by 0x10956E: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876== 
+==00:00:00:00.542 9876== Invalid free() / delete / delete[] / realloc()
+==00:00:00:00.542 9876==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==00:00:00:00.542 9876==    by 0x109328: test3 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==    by 0x10956E: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==  Address 0x4a9d700 is 0 bytes inside a block of size 200 free'd
+==00:00:00:00.542 9876==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==00:00:00:00.542 9876==    by 0x109328: test3 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==    by 0x10956E: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==  Block was alloc'd at
+==00:00:00:00.542 9876==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==00:00:00:00.542 9876==    by 0x1092DC: test3 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==    by 0x10956E: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876== 
+==00:00:00:00.542 9876== Invalid read of size 4
+==00:00:00:00.542 9876==    at 0x1093B2: test4 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==    by 0x109578: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==00:00:00:00.542 9876== 
+==00:00:00:00.542 9876== 
+==00:00:00:00.542 9876== Process terminating with default action of signal 11 (SIGSEGV)
+==00:00:00:00.542 9876==  Access not within mapped region at address 0x0
+==00:00:00:00.542 9876==    at 0x1093B2: test4 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==    by 0x109578: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.542 9876==  If you believe this happened as a result of a stack
+==00:00:00:00.542 9876==  overflow in your program's main thread (unlikely but
+==00:00:00:00.542 9876==  possible), you can try to increase the size of the
+==00:00:00:00.542 9876==  main thread stack using the --main-stacksize= flag.
+==00:00:00:00.542 9876==  The main thread stack size used in this run was 8388608.
+==00:00:00:00.542 9876== 
+==00:00:00:00.542 9876== HEAP SUMMARY:
+==00:00:00:00.542 9876==     in use at exit: 1,124 bytes in 2 blocks
+==00:00:00:00.542 9876==   total heap usage: 5 allocs, 4 frees, 1,764 bytes allocated
+==00:00:00:00.542 9876== 
+==00:00:00:00.543 9876== 100 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==00:00:00:00.543 9876==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==00:00:00:00.543 9876==    by 0x10926A: test2 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.543 9876==    by 0x109564: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.543 9876== 
+==00:00:00:00.543 9876== 1,024 bytes in 1 blocks are still reachable in loss record 2 of 2
+==00:00:00:00.543 9876==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==00:00:00:00.543 9876==    by 0x48EFBA3: _IO_file_doallocate (filedoalloc.c:101)
+==00:00:00:00.543 9876==    by 0x48FECDF: _IO_doallocbuf (genops.c:347)
+==00:00:00:00.543 9876==    by 0x48FDF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+==00:00:00:00.543 9876==    by 0x48FC6D4: _IO_new_file_xsputn (fileops.c:1243)
+==00:00:00:00.543 9876==    by 0x48FC6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==00:00:00:00.543 9876==    by 0x48E614C: outstring_func (vfprintf-internal.c:239)
+==00:00:00:00.543 9876==    by 0x48E614C: __vfprintf_internal (vfprintf-internal.c:1263)
+==00:00:00:00.543 9876==    by 0x48D179E: printf (printf.c:33)
+==00:00:00:00.543 9876==    by 0x109252: test1 (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.543 9876==    by 0x10955A: main (in /home/aaquil/0xAQ/Dev tools/Module 4/output)
+==00:00:00:00.543 9876== 
+==00:00:00:00.543 9876== LEAK SUMMARY:
+==00:00:00:00.543 9876==    definitely lost: 100 bytes in 1 blocks
+==00:00:00:00.543 9876==    indirectly lost: 0 bytes in 0 blocks
+==00:00:00:00.543 9876==      possibly lost: 0 bytes in 0 blocks
+==00:00:00:00.543 9876==    still reachable: 1,024 bytes in 1 blocks
+==00:00:00:00.543 9876==         suppressed: 0 bytes in 0 blocks
+==00:00:00:00.543 9876== 
+==00:00:00:00.543 9876== For lists of detected and suppressed errors, rerun with: -s
+==00:00:00:00.543 9876== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)
